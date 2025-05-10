@@ -10,7 +10,21 @@ import { useFonts } from 'expo-font';
 // Screens
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
+import ReminderScreen from './screens/ReminderScreen';
+import AudioUploadScreen from './screens/AudioUploadScreen';
+import ProfileScreen from './screens/ProfileScreen';
+import PermissionsDebugScreen from './screens/PermissionsDebugScreen';
+import WelcomeScreen from './screens/WelcomeScreen';
+import UserTypeScreen from './screens/UserTypeScreen';
+import PatientInfoScreen from './screens/PatientInfoScreen';
+import MemoryVaultScreen from './screens/MemoryVaultScreen';
+import SummaryScreen from './screens/SummaryScreen';
+import LoadingScreen from './screens/LoadingScreen';
+import WallpaperUploadScreen from './screens/WallpaperUploadScreen';
+import HomeScreenWallpaper from './screens/HomeScreenWallpaper';
 
+import RandomEventScreen from './screens/RandomEventScreen';
+import FaceRecognitionScreen from './screens/FaceRecognitionScreen';
 
 const Stack = createStackNavigator();
 
@@ -67,7 +81,15 @@ export default function App() {
           {/* Old Screens - Comment outside of component flow */}
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="ReminderScreen" component={ReminderScreen} />
+          <Stack.Screen name="AudioUploadScreen" component={AudioUploadScreen} />
+          <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="PermissionsDebug" component={PermissionsDebugScreen} />
+          <Stack.Screen name="WallpaperUploadScreen" component={WallpaperUploadScreen} />
+          <Stack.Screen name="HomeScreenWallpaper" component={HomeScreenWallpaper} />
 
+          <Stack.Screen name="RandomEventScreen" component={RandomEventScreen} />
+          <Stack.Screen name="FaceRecognitionScreen" component={FaceRecognitionScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
