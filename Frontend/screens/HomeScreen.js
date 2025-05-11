@@ -160,26 +160,26 @@ export default function HomeScreen({ navigation }) {
           {/* Memory Support Features */}
           <Text style={styles.sectionTitle}>Memory Support</Text>
           <View style={styles.featuresContainer}>
-            {/* Reminders Card */}
+            {/* Memory Quiz Card for Alzheimer's Patients */}
             <TouchableOpacity
               style={styles.featureCard}
-              onPress={() => navigation.navigate('ReminderScreen')}
+              onPress={() => navigation.navigate('MemoryQuiz')}
               activeOpacity={0.9}
             >
               <LinearGradient
-                colors={['#4299E1', '#2B6CB0']}
+                colors={['#805AD5', '#6B46C1']} // Calmer and memory-supporting tones
                 style={styles.cardBackground}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
               >
                 <View style={styles.cardHeader}>
                   <View style={styles.iconContainer}>
-                    <FontAwesome5 name="bell" size={22} color="#FFF" solid />
+                    <FontAwesome5 name="question-circle" size={22} color="#FFF" solid />
                   </View>
-                  <Text style={styles.cardTitle}>Daily Reminders</Text>
+                  <Text style={styles.cardTitle}>Memory Quiz</Text>
                 </View>
                 <Text style={styles.cardDescription}>
-                  Medication alerts, appointments, and important tasks
+                  Simple quizzes to stimulate memory and support cognitive health
                 </Text>
                 <View style={styles.cardFooter}>
                   <View style={styles.connectionDots}>
@@ -253,36 +253,36 @@ export default function HomeScreen({ navigation }) {
               </LinearGradient>
             </TouchableOpacity>
 
-{/*  Memory Recall Assistant Card */}
-<TouchableOpacity
-  style={styles.featureCard}
-  onPress={() => navigation.navigate('MemoryQAScreen')}
-  activeOpacity={0.9}
->
-  <LinearGradient
-    colors={['#667eea', '#764ba2']}  // Soothing memory colors
-    style={styles.cardBackground}
-    start={{ x: 0, y: 0 }}
-    end={{ x: 1, y: 1 }}
-  >
-    <View style={styles.cardHeader}>
-      <View style={styles.iconContainer}>
-        <FontAwesome5 name="brain" size={22} color="#FFF" solid />
-      </View>
-      <Text style={styles.cardTitle}>Memory Recall</Text>
-    </View>
-    <Text style={styles.cardDescription}>
-      Recall past events and moments by just saying a word.
-    </Text>
-    <View style={styles.cardFooter}>
-      <View style={styles.connectionDots}>
-        <View style={styles.dot} />
-        <View style={styles.dotLine} />
-        <View style={styles.dot} />
-      </View>
-    </View>
-  </LinearGradient>
-</TouchableOpacity>
+            {/*  Memory Recall Assistant Card */}
+            <TouchableOpacity
+              style={styles.featureCard}
+              onPress={() => navigation.navigate('MemoryQAScreen')}
+              activeOpacity={0.9}
+            >
+              <LinearGradient
+                colors={['#667eea', '#764ba2']}  // Soothing memory colors
+                style={styles.cardBackground}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+              >
+                <View style={styles.cardHeader}>
+                  <View style={styles.iconContainer}>
+                    <FontAwesome5 name="brain" size={22} color="#FFF" solid />
+                  </View>
+                  <Text style={styles.cardTitle}>Memory Recall</Text>
+                </View>
+                <Text style={styles.cardDescription}>
+                  Recall past events and moments by just saying a word.
+                </Text>
+                <View style={styles.cardFooter}>
+                  <View style={styles.connectionDots}>
+                    <View style={styles.dot} />
+                    <View style={styles.dotLine} />
+                    <View style={styles.dot} />
+                  </View>
+                </View>
+              </LinearGradient>
+            </TouchableOpacity>
 
 
             {/* Photo Gallery Card */}
@@ -315,8 +315,6 @@ export default function HomeScreen({ navigation }) {
                 </View>
               </LinearGradient>
             </TouchableOpacity>
-            // Add the following card to your featuresContainer in HomeScreen.js
-            // This should be inserted after your MemoryQAScreen Card
 
             {/* Random Memory Moment Card */}
             <TouchableOpacity
