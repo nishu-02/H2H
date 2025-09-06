@@ -256,7 +256,7 @@ export default function HomeScreen({ navigation }) {
             {/*  Memory Recall Assistant Card */}
             <TouchableOpacity
               style={styles.featureCard}
-              onPress={() => navigation.navigate('MemoryQAScreen')}
+              onPress={() => navigation.navigate('MemoryQA')}
               activeOpacity={0.9}
             >
               <LinearGradient

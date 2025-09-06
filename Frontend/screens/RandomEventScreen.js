@@ -368,7 +368,7 @@ Keep your response short, warm, and easily understandable. The response will be 
               </Text>
               <Button 
                 mode="contained" 
-                onPress={() => navigation.navigate('RecordMemory')} 
+                onPress={() => navigation.navigate('AudioUploadScreen')} 
                 style={styles.recordButton}
               >
                 Record Your First Memory

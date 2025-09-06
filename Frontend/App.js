@@ -22,6 +22,8 @@ import SummaryScreen from './screens/SummaryScreen';
 import LoadingScreen from './screens/LoadingScreen';
 import WallpaperUploadScreen from './screens/WallpaperUploadScreen';
 import HomeScreenWallpaper from './screens/HomeScreenWallpaper';
+import MemoryQAScreen from './screens/MemoryQAScreen';
+import MemoryQuizScreen from './screens/MemoryQuizScreen';
 
 import RandomEventScreen from './screens/RandomEventScreen';
 import FaceRecognitionScreen from './screens/FaceRecognitionScreen';
@@ -87,6 +89,8 @@ export default function App() {
           <Stack.Screen name="PermissionsDebug" component={PermissionsDebugScreen} />
           <Stack.Screen name="WallpaperUploadScreen" component={WallpaperUploadScreen} />
           <Stack.Screen name="HomeScreenWallpaper" component={HomeScreenWallpaper} />
+          <Stack.Screen name="MemoryQA" component={MemoryQAScreen} />
+          <Stack.Screen name="MemoryQuiz" component={MemoryQuizScreen} />
 
           <Stack.Screen name="RandomEventScreen" component={RandomEventScreen} />
           <Stack.Screen name="FaceRecognitionScreen" component={FaceRecognitionScreen} />

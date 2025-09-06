@@ -204,4 +204,19 @@ export const registerFace = async (uid, formData) => {
   }
 };
 
-export const MEMORY_API = `${BASE_URL}${API_ENDPOINTS.MEMORY}`
+export const MEMORY_API = 'http://172.16.6.163:8000/api/audio/memories/export/';
+
+export const memoryJson = async (uid) => {
+  try {
+    // Hardcoded GET request to the export endpoint
+    const response = await axios.get(MEMORY_API, {
+      headers: {
+        'Authorization': uid,
+      },
+    });
+    return response.data;
+  } catch (error) {
+    console.error('MEMORY_JSON error:', error.response?.data || error.message);
+    throw error;
+  }
+};

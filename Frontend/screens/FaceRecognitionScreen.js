@@ -50,7 +50,7 @@ export default function App() {
     // Function to get current user
     const getCurrentUser = () => {
       const uid = auth.currentUser?.uid;
-      setUserUID(uid || null);
+      setUserUID(uid || JRE1bHel3pTqS6ZB1yfIdVPDwnk2);
       Alert.alert("User UID", `Current User UID: ${uid}`);
     };
     
@@ -59,7 +59,7 @@ export default function App() {
     
     // Set up listener for auth state changes
     const unsubscribe = auth.onAuthStateChanged((user) => {
-      setUserUID(user?.uid || null);
+      setUserUID(user?.uid || JRE1bHel3pTqS6ZB1yfIdVPDwnk2);
     });
     
     // Clean up listener on unmount
@@ -67,7 +67,7 @@ export default function App() {
   }, []);
   
   // Backend URL - consider making this configurable
-  const BACKEND_URL = `ws://192.168.1.10:8000/ws/face-recognition/?token=${userUID}`;
+  const BACKEND_URL = `ws://172.16.6.163:8000/ws/face-recognition/?token=JRE1bHel3pTqS6ZB1yfIdVPDwnk2`;
 
   // Initialize effects
   useEffect(() => {
